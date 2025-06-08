@@ -1,8 +1,3 @@
-
-<p align="left">
-  <img src="images/nihar_nandanwar_logo.png" alt="Nihar Nandanwar Logo" width="140">
-</p>
-
 # RFM Customer Segmentation using K-Means Clustering
 
 This project applies RFM (Recency, Frequency, Monetary) analysis and unsupervised machine learning to segment customers based on their purchasing behaviour. The goal is to support data-driven marketing strategies by identifying customer groups with similar characteristics.
