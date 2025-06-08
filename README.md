@@ -1,6 +1,6 @@
 
 <p align="left">
-  <img src="images/Nihar-Nandanwar-Logo.png" alt="Nihar Nandanwar Logo" width="140">
+  <img src="images/nihar_nandanwar_logo.png" alt="Nihar Nandanwar Logo" width="140">
 </p>
 
 # RFM Customer Segmentation using K-Means Clustering
