@@ -68,3 +68,10 @@ RFM segmentation provides valuable insights into customer behaviour, enabling bu
 - Design loyalty programmes for high-value customers
 - Create re-engagement campaigns for at-risk groups
 - Optimise budget allocation by focusing on the most impactful customer segments
+
+  ## 📄 License and Usage
+
+This project is licensed under the MIT License. You are free to use, share, and adapt the work, provided proper credit is given.
+
+Please credit the original author: Nihar Nandanwar (https://github.com/niharn02)
+
