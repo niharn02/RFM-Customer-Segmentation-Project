@@ -54,15 +54,6 @@ It was divided into four structured CSV files:
 - Identified and labelled customer segments such as Loyal, Lost, and Potential customers
 - Exported final segmentation data for reporting
 
-## Project Files
-
-- `SQL_Analysis.sql`: All key SQL queries used
-- `PowerBI_Dashboard.pbix`: Interactive Power BI dashboard
-- `RFM_Segmentation.ipynb`: Python notebook for customer segmentation
-- `rfm_customer_segments.csv`: Final clustered customer dataset
-- `Project_Report.docx`: Detailed documentation and explanation
-- `README.md`: This file
-
 ## Business Value
 
 This analysis helps businesses:
