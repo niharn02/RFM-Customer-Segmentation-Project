@@ -1,78 +1,79 @@
-# RFM Customer Segmentation using K-Means Clustering
 
-This project applies RFM (Recency, Frequency, Monetary) analysis and unsupervised machine learning to segment customers based on their purchasing behaviour. The goal is to support data-driven marketing strategies by identifying customer groups with similar characteristics.
+# Superstore Sales Analysis and Customer Segmentation
+
+This project provides a complete data analysis case study using the Superstore dataset. It includes data cleaning and analysis using SQL, interactive dashboard creation using Power BI, and customer segmentation using Python. The goal is to understand sales trends, identify profitable segments, and support business decision-making with data.
 
 ## Objective
 
-To group customers into actionable segments using clustering techniques. These segments help businesses:
-
-- Improve customer retention
-- Personalise marketing strategies
-- Identify and recover at-risk customers
-- Focus on high-value customer groups
+The main goals of this project are:
+- To identify the most profitable products, categories, and customers
+- To understand how discounts impact overall profit
+- To build a clear and interactive dashboard for business users
+- To segment customers based on purchasing behaviour using machine learning
 
 ## Dataset Overview
 
-The dataset is based on the Superstore Sales data, which can be publicly downloaded from:
+The dataset is available on Kaggle:  
+[Superstore Dataset](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
 
-[Superstore Dataset (Kaggle)](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
+It was divided into four structured CSV files:
+- `customers.csv`: Customer information
+- `orders.csv`: Order details and dates
+- `order_details.csv`: Sales, quantity, discount, profit
+- `products.csv`: Product categories and sub-categories
 
-It contains four CSV files:
-- `customers.csv` – Customer information
-- `orders.csv` – Order IDs and order dates
-- `order_details.csv` – Transaction-level data (sales, quantity, discount)
-- `products.csv` – Product information (not used in this analysis)
+## Tools Used
 
-## Tools and Libraries
+- MySQL and phpMyAdmin for data extraction and SQL queries
+- Power BI for visualisation and dashboard creation
+- Python (Jupyter Notebook) for analysis and customer segmentation
+- Libraries: pandas, seaborn, matplotlib, scikit-learn
 
-- Python
-- Pandas, NumPy
-- Scikit-learn (KMeans, StandardScaler)
-- Matplotlib, Seaborn
+## Project Workflow
 
-## Workflow Summary
+### Phase 1: SQL Analysis
+- Created relational tables from CSV files
+- Wrote queries to calculate sales, profit, profit margin
+- Identified top products and customers
+- Analysed the impact of discounts and category-level profitability
 
-1. **Data Loading and Merging**  
-   All four CSVs are merged into a single transactional dataset.
+### Phase 2: Power BI Dashboard
+- Connected MySQL to Power BI
+- Created KPI cards, sales trend charts, profit margin visuals
+- Added slicers for region, segment, and order month
+- Included insights and back buttons using bookmarks
 
-2. **RFM Metric Calculation**  
-   For each customer:
-   - Recency: Days since last purchase
-   - Frequency: Number of unique purchases
-   - Monetary: Total amount spent
+### Phase 3: Exploratory Data Analysis (Python)
+- Loaded and explored the dataset in Jupyter Notebook
+- Created visualisations like histograms, boxplots, and heatmaps
+- Confirmed SQL insights and analysed data distribution
 
-3. **Data Preprocessing**  
-   RFM features are scaled using `StandardScaler` to normalise value ranges.
+### Phase 4: RFM Customer Segmentation
+- Calculated Recency, Frequency, and Monetary metrics
+- Normalised data and applied K-Means clustering
+- Identified and labelled customer segments such as Loyal, Lost, and Potential customers
+- Exported final segmentation data for reporting
 
-4. **K-Means Clustering**  
-   - The elbow method is used to determine the optimal number of clusters
-   - K-Means is applied to group customers into distinct behavioural segments
+## Project Files
 
-5. **Cluster Interpretation and Segment Labelling**  
-   Clusters are interpreted based on their average RFM characteristics and labelled accordingly (e.g., High Value Loyalists, At Risk, Lost Customers).
+- `SQL_Analysis.sql`: All key SQL queries used
+- `PowerBI_Dashboard.pbix`: Interactive Power BI dashboard
+- `RFM_Segmentation.ipynb`: Python notebook for customer segmentation
+- `rfm_customer_segments.csv`: Final clustered customer dataset
+- `Project_Report.docx`: Detailed documentation and explanation
+- `README.md`: This file
 
-6. **Data Export**  
-   The final customer segmentation dataset is saved as a CSV file for reporting or dashboard use (e.g., in Power BI).
+## Business Value
 
-## Deliverables
+This analysis helps businesses:
+- Focus on high-value customers
+- Adjust discount strategies to protect profit
+- Improve decision-making through interactive reporting
+- Personalise marketing using customer segments
 
-- `RFM_Segmentation.ipynb` – Python notebook with the full analysis and visualisation
-- `rfm_customer_segments.csv` – Final dataset with RFM scores, cluster labels, and segment names
-- `README.md` – Documentation describing the purpose, process, and outcome of the project
+## License
 
-## Business Impact
+This project is released under the MIT License. You can use or adapt the work with proper credit.
 
-RFM segmentation provides valuable insights into customer behaviour, enabling businesses to:
-
-- Target marketing efforts more effectively
-- Design loyalty programmes for high-value customers
-- Create re-engagement campaigns for at-risk groups
-- Optimise budget allocation by focusing on the most impactful customer segments
-
-
-  ## 📄 License and Usage
-
-This project is licensed under the MIT License. You are free to use, share, and adapt the work, provided proper credit is given.
-
-Please credit the original author: Nihar Nandanwar (https://github.com/niharn02)
-
+Author: Nihar Nandanwar  
+GitHub: https://github.com/niharn02
