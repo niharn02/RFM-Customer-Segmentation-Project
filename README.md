@@ -1,4 +1,3 @@
-
 # RFM Customer Segmentation using K-Means Clustering
 
 This project applies RFM (Recency, Frequency, Monetary) analysis and unsupervised machine learning to segment customers based on their purchasing behaviour. The goal is to support data-driven marketing strategies by identifying customer groups with similar characteristics.
@@ -14,8 +13,11 @@ To group customers into actionable segments using clustering techniques. These s
 
 ## Dataset Overview
 
-The dataset is composed of four CSV files derived from customer order data:
+The dataset is based on the Superstore Sales data, which can be publicly downloaded from:
 
+[Superstore Dataset (Kaggle)](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
+
+It contains four CSV files:
 - `customers.csv` – Customer information
 - `orders.csv` – Order IDs and order dates
 - `order_details.csv` – Transaction-level data (sales, quantity, discount)
